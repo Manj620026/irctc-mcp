@@ -1,0 +1,30 @@
+{
+  "$schema": "https://glama.ai/mcp/schema/v1.json",
+  "name": "irctc-mcp",
+  "version": "1.0.0",
+  "description": "First-to-market Indian Railways MCP Server. Allows Cursor, Windsurf, Claude Code, and Claude Desktop to check live PNR status, 14-day seat availability forecasts, vacant berths post-charting, and GPS train delays natively.",
+  "homepage": "https://irctc.dev",
+  "repository": "https://github.com/Manj620026/irctc-mcp",
+  "license": "MIT",
+  "runtime": "node",
+  "transport": "stdio",
+  "entrypoint": "bin/mcp.js",
+  "environment": {
+    "IRCTC_API_KEY": {
+      "description": "Your irctc.dev API Key (claim 10,000 free credits at https://irctc.dev/dashboard)",
+      "required": false
+    },
+    "IRCTC_API_BASE_URL": {
+      "description": "API Gateway Base URL",
+      "required": false,
+      "default": "https://api.irctc.dev"
+    }
+  },
+  "tools": [
+    "check_pnr",
+    "get_live_running_status",
+    "search_trains",
+    "check_seat_availability",
+    "get_vacant_berths_post_chart"
+  ]
+}

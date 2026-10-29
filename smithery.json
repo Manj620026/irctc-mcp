@@ -1,0 +1,26 @@
+{
+  "$schema": "https://smithery.ai/schema/config.json",
+  "startCommand": {
+    "type": "stdio",
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "Your irctc.dev API Key (claim 10,000 free credits at https://irctc.dev/dashboard)"
+        },
+        "baseUrl": {
+          "type": "string",
+          "description": "API Gateway Base URL",
+          "default": "https://api.irctc.dev"
+        }
+      }
+    },
+    "command": "npx",
+    "args": ["-y", "irctc-mcp"],
+    "env": {
+      "IRCTC_API_KEY": "${apiKey}",
+      "IRCTC_API_BASE_URL": "${baseUrl}"
+    }
+  }
+}

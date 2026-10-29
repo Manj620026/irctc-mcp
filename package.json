@@ -1,0 +1,47 @@
+{
+  "name": "irctc-mcp",
+  "version": "1.0.1",
+  "description": "Official Model Context Protocol (MCP) server for Indian Railways API (irctc.dev). Connects Cursor, Windsurf, Claude Code, and Claude Desktop to live railway data.",
+  "main": "index.js",
+  "bin": {
+    "irctc-mcp": "./bin/mcp.js"
+  },
+  "scripts": {
+    "start": "node bin/mcp.js",
+    "test": "node test/test-mcp.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agent",
+    "cursor",
+    "windsurf",
+    "claude",
+    "claude-desktop",
+    "irctc",
+    "indian-railways",
+    "pnr-status",
+    "train-tracking"
+  ],
+  "author": "IRCTC API Team <support@irctc.dev>",
+  "license": "MIT",
+  "homepage": "https://irctc.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manj620026/irctc-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Manj620026/irctc-mcp/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin",
+    "index.js",
+    "README.md",
+    "smithery.json",
+    "glama.json",
+    "LICENSE"
+  ]
+}

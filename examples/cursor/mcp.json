@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "irctc": {
+      "command": "npx",
+      "args": ["-y", "irctc-mcp"],
+      "env": {
+        "IRCTC_API_KEY": "YOUR_IRCTC_DEV_API_KEY",
+        "IRCTC_API_BASE_URL": "https://api.irctc.dev"
+      }
+    }
+  }
+}
