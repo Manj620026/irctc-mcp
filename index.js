@@ -6,7 +6,7 @@ const os = require('node:os');
 const readline = require('node:readline');
 
 const SERVER_NAME = 'irctc-mcp';
-const SERVER_VERSION = '1.0.1';
+const SERVER_VERSION = '1.0.2';
 const PROTOCOL_VERSION = '2024-11-05';
 
 /**

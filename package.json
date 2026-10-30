@@ -1,6 +1,6 @@
 {
   "name": "irctc-mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Official Model Context Protocol (MCP) server for Indian Railways API (irctc.dev). Connects Cursor, Windsurf, Claude Code, and Claude Desktop to live railway data.",
   "main": "index.js",
   "bin": {
